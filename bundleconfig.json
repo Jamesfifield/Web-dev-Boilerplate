@@ -1,0 +1,23 @@
+[
+  {
+    "outputFileName": "Scripts/angular.bundle.js",
+    "inputFiles": [
+      "js/lib/angular.js",
+      "js/lib/angluar-*.js",
+      "js/lib/**/angluar-*.js"
+    ]
+  },
+  {
+    "outputFileName": "app/app.bundle.js",
+    "inputFiles": [
+      "js/app/app.js",
+      "js/app/*.js", 
+      "js/app/**/*.js" ]
+  },
+  {
+    "outputFileName": "Styles/style.css",
+    "inputFiles": [
+      "Styles/style.css"
+    ]
+  }
+]
