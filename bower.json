@@ -1,0 +1,26 @@
+{
+  "name": "AngularTesting",
+  "authors": [
+    "james Fifield <james.fifield@hotmail.com>"
+  ],
+  "description": "App to practice testing angular apps",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-material": "^1.0.7"
+  },
+  "devDependencies": {}
+}
