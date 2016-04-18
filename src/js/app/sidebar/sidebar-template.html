@@ -1,0 +1,39 @@
+ <md-sidenav class="md-sidenav-left "   md-component-id="left" md-is-locked-open="$mdMedia('gt-md')"  >
+<!--      <md-sidenav class="md-sidenav-left" md-component-id="left"  md-disable-backdrop  md-is-locked-open="$mdMedia('gt-md')" >-->
+      <md-toolbar  class=" md-hue-2 md-whiteframe-1dp">
+        <h1 class="md-toolbar-tools">{{$ctrl.page}}</h1>
+      </md-toolbar>
+      <md-content layout-padding layout="column" md-padding flex class="md-hue-2">
+            <form>
+              <md-input-container>
+                <label for="Keywords">Keywords</label>
+                <input type="text" id="Keywords"
+                       ng-model="data" md-autofocus>
+              </md-input-container>
+                  
+            <md-input-container>
+                <label for="Keywords">Keywords</label>
+                <input type="text" id="Keywords"
+                       ng-model="data" md-autofocus>
+              </md-input-container>
+                   
+              <md-input-container layout="row" class="inline">
+                    <label>Model</label>
+                    <md-select ng-model="ctrl.userState" ng-init="states = [1,2,3,4,5]">
+                        <md-option ng-repeat="state in states" value="{{state}}" ng-disabled="$index === 1">
+                        {{state}}
+                      </md-option>
+                                         
+                    </md-select>
+              </md-input-container>
+                
+                <md-datepicker class="md-hue-2" ng-model="myDate" md-placeholder="Year"></md-datepicker>
+
+              
+               
+            </form>
+            <md-button ng-click="close()" class="md-primary">
+              Search
+            </md-button>
+      </md-content>
+</md-sidenav>

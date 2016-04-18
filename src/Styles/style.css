@@ -1,7 +1,98 @@
-﻿body {
+body {
 background:#d3d3d3;
+overflow:hidden;
+font-family: 'Michroma', sans-serif;
+height: 100%;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+.md-sidenav-backdrop
+{
+    display: none;
+}
+
+.content-banner
+{
+    margin-bottom: 30px;
+    height:200px;
+}
+
+/*Dev*/
+.blue{background: lightblue;}
+.green{background: lightgreen;}
+.fixed{position: fixed !important}
+.fixed-padding{padding-top: 30px; }
+
+.margin-5
+{
+    margin:5px;
+}
+.margin-right-10
+{
+    margin:10px;
+}
+
+.font-red
+{
+    color:#D32F2F !important;
+     font-weight: 800!important;
+}
+
+.menu-bar{
+    background-image:url('../content/images/carbon3-x2.jpg');
+    z-index:1000;
+}
+.my-small
+{
+    font-size: .8em;
+}
+.tab
+{
+    padding-left: 15px;
+}
+
+.menu-bar-header{
+    box-sizing:border-box
+    color:rgb(217, 83, 79);
+    cursor:auto;
+    display:inline;
+    font-family:Michroma, sans-serif;
+    font-size: 0.8em!important;
+    font-weight: 600!important;
+    height:auto;
+    padding-left:28.5px;
+    text-transform:uppercase;
+    width:auto;
+}
+.inline
+{
+    display: block!important;
+    padding:11px;
+}
+
+.vline
+{
+	height: 400px;
+	width: 1px;
+	background-color:darkgray;
+	margin: 15px;
+}
+
+.login md-card {
+    width: 800px;
+}
+
+.login .logo {
+    font-size: 48px;
+  
+    height: 48px;
+}
+.listing-content
+{
+	min-height: 1200px!important;
+	height:100vh!important;
+
 }

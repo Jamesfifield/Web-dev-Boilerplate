@@ -11,7 +11,9 @@
 <link rel="stylesheet" href="js/lib/bootstrap/bootstrap.css" />
 <link rel="stylesheet" href="js/lib/angular-material/angular-material.css" />
 <!--  endbower -->
-   
+  
+   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Michroma|Questrial" rel="stylesheet" type="text/css">
    
 <link href="Styles/style.css" rel="stylesheet" />
 
@@ -20,11 +22,15 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
-<body ng-app="app" ng-controller="homeCtrl">
+<body ng-app="app">
 
-{{1+1}}
+    <div layout-fill class="wrapper">
+        <app-menu-bar></app-menu-bar>
+        <div ui-view ></div>
+       
 
-<md-button >Pussh me</md-button>
+
+    </div>
 
 
 <!--  bower:js -->
@@ -36,11 +42,49 @@
 <script src="js/lib/angular-aria/angular-aria.js"></script>
 <script src="js/lib/angular-messages/angular-messages.js"></script>
 <script src="js/lib/angular-material/angular-material.js"></script>
+<script src="js/lib/angular-mocks/angular-mocks.js"></script>
+<script src="js/lib/angular-route/angular-route.js"></script>
+<script src="js/lib/firebase/firebase.js"></script>
+<script src="js/lib/angularfire/dist/angularfire.js"></script>
+<script src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
 <!--  endbower -->
    
-   <!--  inject:js -->
+<!--  inject:js -->
+
 <script src="/src/js/app/app.module.js"></script>
+
+<script src="/src/js/app/calc.js"></script>
+
 <script src="/src/js/app/homeCtrl.js"></script>
+
+<script src="/src/js/app/accessory/accessory-controller.js"></script>
+
+<script src="/src/js/app/home/home-controller.js"></script>
+
+<script src="/src/js/app/listingcard/listingCard-directive.js"></script>
+
+<script src="/src/js/app/login/auth.js"></script>
+
+<script src="/src/js/app/login/AuthenicationButton-directive.js"></script>
+
+<script src="/src/js/app/login/login-controller.js"></script>
+
+<script src="/src/js/app/menubar/appMenuBar-directive.js"></script>
+
+<script src="/src/js/app/motorcycle/motorcycle-controller.js"></script>
+
+<script src="/src/js/app/parts/parts-controller.js"></script>
+
+<script src="/src/js/app/rentals/rental-controller.js"></script>
+
+<script src="/src/js/app/shared/fbUrl.js"></script>
+
+<script src="/src/js/app/shared/movieData-service.js"></script>
+
+<script src="/src/js/app/shared/toast-service.js"></script>
+
+<script src="/src/js/app/sidebar/sidebar-directive.js"></script>
+
 <!--  endinject -->
    
 </body>

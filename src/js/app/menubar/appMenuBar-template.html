@@ -1,0 +1,52 @@
+ <md-toolbar class="md-hue-2 font-red  md-whiteframe-2dp">
+      <div layout="column" layout-gt-sm="row"  class="md-toolbar-tools menu-bar">
+       <a ui-sref="home">
+           <img src="./content/images/logo.png" alt="" >
+       </a>
+<!--       <sidebar-toggle-button></sidebar-toggle-button>-->
+       
+        <h2 class="menu-bar-header">
+          Adrenalyn
+          <br>
+          <span class="my-small tab">Motorcycles</span>
+        </h2>
+           <span flex></span>
+         <md-button ui-sref-active="font-red" ui-sref="motorcycle"  aria-label="Learn More">
+          Motorcycles
+        </md-button>
+          <md-button ui-sref="rental" ui-sref-active="font-red" class="" aria-label="Learn More">
+          Rentals
+        </md-button>   
+<!--
+          <md-list ng-repeat="topic in menu.activities">
+
+   <md-list-item md-expando>
+      <md-icon src="{{topic.icon}}"></md-icon>
+     <label>sdsdsdds</label>
+   </md-list-item>
+
+</md-list>        
+-->
+        <md-button class="" ui-sref="accessory" ui-sref-active="font-red"   aria-label="Learn More">
+          Accessories
+        </md-button>
+        <md-button class="" aria-label="Learn More" ui-sref="parts"  ui-sref-active="font-red">
+          Parts
+        </md-button>
+        <md-button class="" ng-hide="isLoggedIn" ui-sref="login"  ui-sref-active="font-red"  aria-label="Learn More">
+          Login
+        </md-button>
+        
+        <md-button ng-show="isLoggedIn"  ui-sref-active="font-red" ng-click="logout()"  aria-label="Learn More">
+          Logout
+        </md-button>
+
+		
+<!--
+        <md-button class="md-fab md-mini" aria-label="Favorite">
+          <md-icon md-svg-icon=""></md-icon>
+        </md-button>
+-->
+      </div>
+      
+</md-toolbar>
